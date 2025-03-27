@@ -4,9 +4,9 @@ body{
     justify-items: center;
 }
 
-div{
+/* div{
     border: 1px solid red;
-}
+} */
 
 .container-principal{
     align-items: center;
@@ -14,12 +14,12 @@ div{
     justify-items: center;
 }
 
-.img{
+/* .img{
     width: 390px;
     height: 814px;
-}
+} */
 
-img{
+/* img{
     width: 390px;
     height: 814px;
-}
+} */
