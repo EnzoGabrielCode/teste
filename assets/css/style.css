@@ -1,0 +1,25 @@
+body{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+div{
+    border: 1px solid red;
+}
+
+.container-principal{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.img{
+    width: 390px;
+    height: 814px;
+}
+
+img{
+    width: 390px;
+    height: 814px;
+}
