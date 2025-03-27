@@ -2,7 +2,7 @@ body{
     align-items: center;
     justify-content: center;
     justify-items: center;
-    background-color: black;
+    background-color: orangered;
 }
 
 .container-principal{
@@ -29,6 +29,7 @@ img{
     justify-content: center;
     justify-items: center;
     display: flex;
+    
 }
 
 .botao-compartilhar{
@@ -42,5 +43,5 @@ img{
     align-items: center;
     justify-content: center;
     justify-items: center;
-    gap: 20px;
+    gap: 30px;
 }
