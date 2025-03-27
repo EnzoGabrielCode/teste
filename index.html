@@ -13,7 +13,7 @@
 <body>
     <div class="container-principal">
         <div class="container-img">
-            <img src="./assets/img/Profundidade______Taynara-story.png" alt="">
+            <img id="versiculo-img" src="./assets/img/versiculos/1.png" alt="">
         </div>
         <div class="container-compartilhar">
             <div class="caixa">
@@ -23,5 +23,14 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const imgElement = document.getElementById("versiculo-img");
+            if (imgElement) {
+                const randomNumber = Math.floor(Math.random() * 4) + 1;
+                imgElement.src = `./assets/img/versiculos/${randomNumber}.png`;
+            }
+        });
+    </script>
 </body>
 </html>
