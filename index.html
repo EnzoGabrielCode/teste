@@ -20,8 +20,8 @@
                 <a href="" id="whatsapp-btn" target="_blank">
                     <img class="botao-compartilhar" src="./assets/img/Vector.png" alt="">
                 </a>
-                <a href="" id="instagram-btn" target="_blank">
-                    <img class="botao-compartilhar" src="./assets/img/insta.png" alt="">
+                <a href="" id="share-btn">
+                    <img class="botao-compartilhar" src="./assets/img/share.png" alt="">
                 </a>
                 <a href="#" id="download-btn" download="versiculo.png">
                     <img class="botao-compartilhar" src="./assets/img/download.png" alt="">
@@ -29,25 +29,6 @@
             </div>
         </div>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const imgElement = document.getElementById("versiculo-img");
-            const downloadBtn = document.getElementById("download-btn");
-            const whatsappBtn = document.getElementById("whatsapp-btn");
-            const instagramBtn = document.getElementById("instagram-btn");
-            
-            if (imgElement && downloadBtn && whatsappBtn && instagramBtn) {
-                const randomNumber = Math.floor(Math.random() * 4) + 1;
-                const imagePath = `./assets/img/versiculos/${randomNumber}.png`;
-                
-                imgElement.src = imagePath;
-                downloadBtn.href = imagePath;
-                
-                const encodedImagePath = encodeURIComponent(window.location.origin + '/' + imagePath);
-                whatsappBtn.href = `https://api.whatsapp.com/send?text=Confira esta imagem: ${encodedImagePath}`;
-                instagramBtn.href = `https://www.instagram.com/`; // Instagram não permite compartilhamento direto de imagens externas
-            }
-        });
-    </script>
+    <script src="./assets/scripts/script.js" defer></script>
 </body>
 </html>
