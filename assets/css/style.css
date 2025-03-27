@@ -15,9 +15,20 @@ body{
     justify-items: center;
 }
 
-.img{
+.compartilhar{
+    width: 390px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+}
+
+
+.container-img{
     width: 390px;
     height: 756px;
+    display: flex;
 }
 
 img{
