@@ -17,18 +17,35 @@
         </div>
         <div class="container-compartilhar">
             <div class="caixa">
-                <a href=""><img class="botao-compartilhar" src="./assets/img/Vector.png" alt=""></a>
-                <a href=""><img class="botao-compartilhar" src="./assets/img/insta.png" alt=""></a>
-                <a href=""><img class="botao-compartilhar" src="./assets/img/download.png" alt=""></a>
+                <a href="" id="whatsapp-btn" target="_blank">
+                    <img class="botao-compartilhar" src="./assets/img/Vector.png" alt="">
+                </a>
+                <a href="" id="instagram-btn" target="_blank">
+                    <img class="botao-compartilhar" src="./assets/img/insta.png" alt="">
+                </a>
+                <a href="#" id="download-btn" download="versiculo.png">
+                    <img class="botao-compartilhar" src="./assets/img/download.png" alt="">
+                </a>
             </div>
         </div>
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const imgElement = document.getElementById("versiculo-img");
-            if (imgElement) {
+            const downloadBtn = document.getElementById("download-btn");
+            const whatsappBtn = document.getElementById("whatsapp-btn");
+            const instagramBtn = document.getElementById("instagram-btn");
+            
+            if (imgElement && downloadBtn && whatsappBtn && instagramBtn) {
                 const randomNumber = Math.floor(Math.random() * 4) + 1;
-                imgElement.src = `./assets/img/versiculos/${randomNumber}.png`;
+                const imagePath = `./assets/img/versiculos/${randomNumber}.png`;
+                
+                imgElement.src = imagePath;
+                downloadBtn.href = imagePath;
+                
+                const encodedImagePath = encodeURIComponent(window.location.origin + '/' + imagePath);
+                whatsappBtn.href = `https://api.whatsapp.com/send?text=Confira esta imagem: ${encodedImagePath}`;
+                instagramBtn.href = `https://www.instagram.com/`; // Instagram não permite compartilhamento direto de imagens externas
             }
         });
     </script>
