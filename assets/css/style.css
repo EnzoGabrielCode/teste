@@ -9,12 +9,22 @@ header{
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     display: flex;
     width: 100%;
     height: 70px;
     position: absolute;
-    background: rgba(255, 255, 255, 0.9)
+    background: #7fcc02;
+}
+
+.texto{
+    font-size: 1.5rem;
+    color: #000;
+}
+
+h2{
+    font-size: 2rem;
+    color: #000;
 }
 
 .logo-header{
@@ -41,25 +51,49 @@ img{
 
 .container-compartilhar{
     width: 100%;
-    height: auto;
+    height: 130px;
     align-items: center;
     justify-content: center;
     justify-items: center;
     display: flex;
-    
+    background-color: #7fcc02;
+    flex-direction: column;
+    text-align: center;
 }
 
 .botao-compartilhar{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 .caixa{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
     justify-items: center;
-    gap: 30px;
+    gap: 25px;
+}
+
+.contact{
+    background-color: #7fcc02;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;flex-direction: column;
+    padding-top: 6%;
+    padding-bottom: 8%;
+    gap: 15px;
+    height: 120px;
+}
+
+.insta{
+    width: 35px;
+    height: 35px;
+}
+
+.divisao{
+    border: solid 2px #000;
 }
