@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const shareBtn = document.getElementById("share-btn");
     
     if (imgElement && downloadBtn && whatsappBtn ) {
-        const randomNumber = Math.floor(Math.random() * 2) + 1;
+        const randomNumber = Math.floor(Math.random() * 3) + 1;
         const imagePath = `./assets/img/versiculos/${randomNumber}.png`;
         
         imgElement.src = imagePath;
